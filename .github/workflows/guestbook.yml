@@ -62,7 +62,8 @@ jobs:
             fileSystem.writeFileSync('README.md', readme.replace(/(?<=<!-- Guestbook -->.*\n)[\S\s]*?(?=<!-- \/Guestbook -->|$(?![\n]))/gm, totalText), 'utf8');
       - name: Push guestbook update
         run: |
-          git config --global user.name 'jungmin'
-          git config --global user.email '1232132+JEM1224@users.noreply.github.com'
-          git commit -am '방명록 업데이트  ! '
+          git config user.name 'JEM1224'
+          git config user.email 'jmeve24@naver.com'
+          git add .
+          git commit -m '방명록 업데이트  ! '
           git push origin main
