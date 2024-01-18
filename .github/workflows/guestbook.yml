@@ -15,12 +15,12 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-        with: 
-          token: ${{ secrets.PAT }}
       - name: Update guestbook from comments
         uses: actions/github-script@v6
         with:
+          github-token: ${{ secrets.PAT }}
           script: |
+
             const query = `query($owner:String!, $name:String!, $issue_number:Int!) {
               repository(owner:$owner, name:$name){
                 issue(number:$issue_number) {
@@ -56,16 +56,13 @@ jobs:
                 return `${prev}<tr><td> <a href="${author}"><img width="60" src="${avatarUrl}"/></a></td><td><p align="center">${text}</p></td></tr>`;
               }, "");
 
-            
             totalText+= "</table></p></td></table>";
             const fileSystem = require('fs');
             const readme = fileSystem.readFileSync('README.md', 'utf8');
             fileSystem.writeFileSync('README.md', readme.replace(/(?<=<!-- Guestbook -->.*\n)[\S\s]*?(?=<!-- \/Guestbook -->|$(?![\n]))/gm, totalText), 'utf8');
-     
       - name: Push guestbook update
         run: |
-          git config --global user.email "github-actions@github.com"
-          git config --global user.name "github-actions"
-          git add .
-          git commit -m '방명록 업데이트  ! '
-          git push 
+          git config --global user.name 'jungmin'
+          git config --global user.email '1232132+JEM1224@users.noreply.github.com'
+          git commit -am '방명록 업데이트  ! '
+          git push
