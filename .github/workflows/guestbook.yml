@@ -65,4 +65,4 @@ jobs:
           git config --global user.name 'jungmin'
           git config --global user.email '1232132+JEM1224@users.noreply.github.com'
           git commit -am '방명록 업데이트  ! '
-          git push
+          git push origin main
