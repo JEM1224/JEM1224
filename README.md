@@ -1,7 +1,14 @@
 
 <img src="https://user-images.githubusercontent.com/101504594/234354992-88f43717-fdaa-45b4-b148-e0834cac840e.gif" width="100%" height="80%">
 
+<h2 align="center" >
+  <a href="https://github.com/JEM1224/JEM1224/issues/2">
+    <strong>TIL</strong>
+  </a>
+</h2>
+<!-- TIL -->
 
+<!-- \/TIL -->
 
 <h2 align="center" te>
   <a href="https://github.com/JEM1224/JEM1224/issues/1">
@@ -25,14 +32,7 @@
 </td>
   <td>
 
-<h2 align="center" te>
-  <a href="https://github.com/JEM1224/JEM1224/issues/2">
-    <strong>TIL</strong>
-  </a>
-</h2>
-<!-- TIL -->
 
-<!-- \/TIL -->
 
 <!-- Guestbook -->
 <table align="center" height="250"><tr><td> <a href="https://github.com/BHyeonKim"><img width="60" src="https://avatars.githubusercontent.com/u/46583212?s=60&u=ee58bc4bfe46dc8074aef87d52ddf20a8846682d&v=4"/></a></td><td><p align="center">첫번째로　방명록　영광입니다～</p></td></tr><tr><td> <a href="https://github.com/JEM1224"><img width="60" src="https://avatars.githubusercontent.com/u/101504594?s=60&u=b5dae82e603e9aa8758af25e766264a7d52c9cdc&v=4"/></a></td><td><p align="center">안녕하세요 ~~~ ! ! ! ! ! ~~~! !</p></td></tr></table></p></td></table>
