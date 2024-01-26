@@ -1,11 +1,8 @@
 
 <img src="https://user-images.githubusercontent.com/101504594/234354992-88f43717-fdaa-45b4-b148-e0834cac840e.gif" width="100%" height="80%">
 
-<h2 align="center" >
-  <a href="https://github.com/JEM1224/JEM1224/issues/2">
-    <strong>TIL</strong>
-  </a>
-</h2>
+
+
 <!-- TIL -->
 ### 2024-01-26T14:39:03Z
 1. java에서 int와 Integer의 차이점  
@@ -15,8 +12,27 @@
  - box :  원시 타입을 Object로 포장
  - unbox : Object을 원시 타입으로 벗겨냄
  <!-- /TIL -->
-
+ 
+<h2 align="center" te>
+  <a href="https://github.com/JEM1224/JEM1224/issues/1">
+    <strong>⁺⋆｡🦋₊⋆°⋆˚✧₊⁎𝓖𝓾𝓮𝓼𝓽 𝓑𝓸𝓸𝓴⁎₊✧˚⋆°⋆₊🦋｡</strong>
+  </a>
+</h2>
+<table align ="center">
+  <td>
+  <pre>
+    <code>
+  ╭ ◜◝ ͡ ◜◝ ͡ ◜◝ ͡ ◜◝ ͡ ◜◝ ͡ ◜◝ ͡ ◜◝ ͡ ◜◝ ͡ ◜◝╮
+              방명록을 입력해 주세요.
+  ╰ ◟◞ ͜ ◟◞ ͜ ◟◞ ͜ ◟◞ ͜ ◟◞ ͜ ◟◞ ͜ ◟◞ ͜ ◟◞ ͜ ◟◞ ╯
+    O °
+ ᕱ ᕱ
+( ･ω･)
+/ つΦ . .. . ﹢ ⃰ ଂ ಇ
+    </code>
+</pre>
+</td>
+  <td>
 
  <!-- Guestbook -->
 
- <!-- /Guestbook -->
