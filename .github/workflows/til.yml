@@ -1,0 +1,47 @@
+on:
+  issue_comment:
+    types: [created, edited]
+
+name: TIL
+
+jobs:
+  til:
+    name: Update Today I Learned
+    if: ${{ github.event.issue.title == 'TIL' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        
+      - name: Update TIL
+        uses: actions/github-script@v6
+        with:
+          script: |
+
+           async function run() {
+              const response = await github.request('GET /repos/:owner/:repo/issues/:issue_number/comments', {
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number
+              });
+              console.log(response.data.length);
+              const lastData = response.data[response.data.length-1];
+              const day = lastData.created_at;
+              const text = lastData.body;
+              console.log(day,text,lastData);
+              
+             const fileSystem = require('fs');
+             const readme = fileSystem.readFileSync('README.md', 'utf8');
+             fileSystem.writeFileSync('README.md', readme.replace(/(?<=<!-- TIL -->.*\n)[\S\s]*?(?=<!-- \/TIL -->|$(?![\n]))/gm, text), 'utf8');
+            }
+            run();
+  
+          
+            
+      - name: Push 
+        run: |
+          git config --global user.name 'jungmin'
+          git config --global user.email '1232132+JEM1224@users.noreply.github.com'
+          git commit -am 'TIL 업데이트  ! '
+          git push
