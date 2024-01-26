@@ -35,4 +35,5 @@
   <td>
 
  <!-- Guestbook -->
-<!-- Guestbook -->
+ 
+<!-- /Guestbook -->
