@@ -53,6 +53,7 @@ jobs:
                 const avatarUrl = curr.author.avatarUrl;
                 let text = curr.bodyText;
                 const who = curr.author.login;
+                console.log(text);
                 if(text.length>20) text = text.slice(0,20) +".....";
                 return `${prev}<tr><td> <a href="${author}"><img width="30" src="${avatarUrl}"/></a></td><td><p align="center">${who}</p></td><td><p align="center">${text}</p></td></tr>`;
               }, "");
