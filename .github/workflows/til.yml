@@ -25,11 +25,9 @@ jobs:
                 repo: context.repo.repo,
                 issue_number: context.issue.number
               });
-              console.log(response.data.length);
               const lastData = response.data[response.data.length-1];
               const day = lastData.created_at;
-              const text = lastData.body;
-              console.log(day,text,lastData);
+              const text = `### ${day}\n`+ lastData.body;
               
              const fileSystem = require('fs');
              const readme = fileSystem.readFileSync('README.md', 'utf8');
