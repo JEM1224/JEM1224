@@ -62,6 +62,8 @@ jobs:
             const fileSystem = require('fs');
             const readme = fileSystem.readFileSync('./README.md', 'utf8');
             fileSystem.writeFileSync('./README.md', readme.replace(/(?<=<!-- Guestbook -->.*\n)[\S\s]*?(?=<!-- \/Guestbook -->|$(?![\n]))/gm, totalText), 'utf8');
+            const test = fileSystem.readFileSync('./README.md', 'utf8');
+            console.log(test,totalText)
       - name: Push guestbook update
         run: |
           git config --global user.name 'jungmin'
