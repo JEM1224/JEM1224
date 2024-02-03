@@ -22,6 +22,6 @@
 </pre>
 </td>
   <td>
-    
- <!-- Guestbook -->
+
+<!-- Guestbook -->
 
