@@ -60,7 +60,7 @@ jobs:
             totalText+= "</table></p></td></table>";
             const fileSystem = require('fs');
             const readme = fileSystem.readFileSync('./README.md', 'utf8');
-            fileSystem.writeFileSync('./README.md', readme+'\n'+totalText, 'utf8');
+            fileSystem.writeFileSync('./README.md', readme.replace(new RegExp(`<!--Guestbook-->[\\s\\S]*`),`<!--Guestbook-->\n${totalText}`));
       - name: Push guestbook update
         run: |
           git config --global user.name 'jungmin'
