@@ -1,13 +1,13 @@
 
 <img src="https://user-images.githubusercontent.com/101504594/234354992-88f43717-fdaa-45b4-b148-e0834cac840e.gif" width="100%" height="80%">
 
-
-<a href="https://github.com/devxb/gitanimals">
-  <img
-    src="https://render.gitanimals.org/lines/JEM1224?pet-id=599399212719231054"
-    width="600"
-    height="120"
-  />
+<div align="center" te>
+<a align="center" href="https://github.com/devxb/gitanimals">
+<img
+  src="https://render.gitanimals.org/farms/JEM1224"
+  width="600"
+  height="300"
+/>
 </a>
   
 <h2 align="center" te>
